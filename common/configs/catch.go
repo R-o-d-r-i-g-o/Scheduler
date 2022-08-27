@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 	"reflect"
-	"scheduler/library"
-	"scheduler/util"
+	"scheduler/common/library"
+	"scheduler/common/util"
 
 	"github.com/joho/godotenv"
 )

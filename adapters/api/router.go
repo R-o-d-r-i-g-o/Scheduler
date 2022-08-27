@@ -1,11 +1,11 @@
 package api
 
 import (
-	"scheduler/module/home/event"
-	"scheduler/module/home/pastor"
-	"scheduler/module/home/schedule"
-	"scheduler/module/home/user"
-	"scheduler/module/section"
+	"scheduler/core/event"
+	"scheduler/core/pastor"
+	"scheduler/core/schedule"
+	"scheduler/core/section"
+	"scheduler/core/user"
 
 	"github.com/gin-gonic/gin"
 )

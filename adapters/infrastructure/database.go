@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 	"log"
-	"scheduler/configs"
-	model "scheduler/database/entity"
+	model "scheduler/adapters/database/entity"
+	"scheduler/common/configs"
 
 	"gorm.io/gorm"
 )

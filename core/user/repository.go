@@ -1,8 +1,8 @@
 package user
 
 import (
-	db "scheduler/database"
-	"scheduler/database/model"
+	db "scheduler/adapters/database"
+	"scheduler/adapters/database/model"
 )
 
 type IUserReferences interface {

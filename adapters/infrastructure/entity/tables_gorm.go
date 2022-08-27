@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"scheduler/library"
+	"scheduler/common/library"
 	"time"
 
 	"gorm.io/gorm"

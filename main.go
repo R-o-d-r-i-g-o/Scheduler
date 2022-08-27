@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"scheduler/configs"
-	"scheduler/router"
-	"scheduler/server"
+	"scheduler/adapters/api"
+	"scheduler/common/configs"
 
-	"scheduler/database"
-	model "scheduler/database/entity"
+	"scheduler/adapters/database"
+	model "scheduler/adapters/database/entity"
 	"time"
 )
 
@@ -20,8 +19,8 @@ func init() {
 
 func main() {
 
-	currentServer := server.CreateServer()
-	router.Avaible(currentServer.GetServerEngine())
+	currentServer := api.CreateServer()
+	api.Avaible(currentServer.GetServerEngine())
 	currentServer.GetServerEngine().Run(
 
 		configs.Server.HOST + ":" +

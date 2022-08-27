@@ -1,7 +1,7 @@
 package api
 
 import (
-	"scheduler/configs"
+	"scheduler/common/configs"
 
 	"github.com/gin-gonic/gin"
 )
