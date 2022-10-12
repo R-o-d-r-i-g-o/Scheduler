@@ -1,9 +1,9 @@
-package database
+package infrastructure
 
 import (
 	"fmt"
 	"log"
-	model "scheduler/adapters/database/entity"
+	model "scheduler/adapters/infrastructure/entity"
 	"scheduler/common/configs"
 
 	"gorm.io/gorm"
