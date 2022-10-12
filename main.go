@@ -3,18 +3,18 @@ package main
 import (
 	"fmt"
 	"scheduler/adapters/api"
+	"scheduler/adapters/infrastructure"
 	"scheduler/common/configs"
 
-	"scheduler/adapters/database"
-	model "scheduler/adapters/database/entity"
+	"scheduler/adapters/infrastructure/entity"
 	"time"
 )
 
 func init() {
 
 	configs.Load()
-	database.StartDatabase()
-	model.Handler(database.GetGormDB())
+	infrastructure.StartDatabase()
+	entity.Handler(infrastructure.GetGormDB())
 }
 
 func main() {
